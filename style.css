@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-rows: 0fr 1fr 0fr;
+  grid-gap: 20px;
+  width: auto;
+}
+.header {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.title {
+  font-size: 36px;
+  max-width: 100%;
+  font-family: PT serif;
+}
+.geninfo {
+  font-size: 18px;
+  width: 100%;
+}
+.wwr {
+  font-style: semibold;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.photo {
+  width: 80%;
+}
+.personnel {
+  max-width: 305px;
+  font-family: poppins;
+  font-weight: semi-bold;
+  font-size: 18px;
+}
+.geninfo {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 18px;
+}
+.info {
+  font-weight: normal;
+  width: 75%;
+  font-weight: bolder;
+}
+
+.p2 {
+  padding-top: 60px;
+}
+.p5 {
+  padding-top: 60px;
+}
+.po {
+  display: flex;
+}
+.occ {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: PT serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+footer {
+  margin-left: 40%;
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+}
+.link {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  text-decoration: underline;
+  color: #bdbdbd;
+}
+.link:hover {
+  /* font-size: larger; */
+  text-decoration: none;
+  color: #bdbdbd;
+}
+footer {
+  margin-top: 147px;
+  margin-left: 40%;
+  font-family: "Montserrat", sans-serif;
+  color: #828282;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .personnel {
+    width: 155px;
+  }
+  .header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    height: 200px;
+    margin-top: 71px;
+  }
+  .members {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .p4 {
+    padding-top: 60px;
+    justify-self: start;
+  }
+  .p5 {
+    padding-top: 0px;
+  }
+  .p6 {
+    padding-top: 60px;
+  }
+  footer {
+    margin-top: 20px;
+    margin-left: 0;
+    font-family: Montserrat, sans-serif;
+    color: #828282;
+  }
+}
